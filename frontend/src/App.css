@@ -1,0 +1,168 @@
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.app h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-select {
+  padding: 0.55rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.filter-pill:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filter-pill.is-active {
+  color: #fff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.todo-category {
+  font-size: 0.75rem;
+  color: #666;
+  background: #eef2f7;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  white-space: nowrap;
+}
+
+.add-input {
+  flex: 1 1 auto;
+  padding: 0.55rem 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-input:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.add-button {
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #1d4ed8;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.count {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 1 auto;
+  cursor: pointer;
+}
+
+.todo-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+}
+
+.todo-title {
+  font-size: 1rem;
+}
+
+.todo-item.is-done .todo-title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-button {
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+  color: #b91c1c;
+  background: transparent;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #fee2e2;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+}
