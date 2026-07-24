@@ -2,7 +2,7 @@
 // All frontend API calls go through this module (per architecture rules).
 // Endpoints follow PRD section 8: /api/todos, PATCH for completion toggles.
 
-const BASE_URL = import.meta.env.VITE_API_URL ? `https://${import.meta.env.VITE_API_URL}` : "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_URL ? `https://${import.meta.env.VITE_API_URL}` : "https://sreetct-claudetodo-backend.onrender.com";
 
 async function request(path, options = {}) {
   const response = await fetch(`${BASE_URL}${path}`, {
@@ -46,4 +46,3 @@ export function deleteTodo(id) {
     method: "DELETE",
   });
 }
-

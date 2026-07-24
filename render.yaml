@@ -16,7 +16,7 @@
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: ""
+        value: "sreetct-claudetodo-backend.onrender.com"
     routes:
       - type: rewrite
         source: /*
